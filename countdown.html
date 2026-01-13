@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown - Sanu ❤️</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts"></div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <section id="countdown" class="page active">
+            <div class="countdown-content">
+                <h1 class="section-title">Countdown to Your Special Day, Sanu</h1>
+                
+                <div class="countdown-container">
+                    <h2>Counting down to the most magical day — Sanu's Birthday 🎂✨</h2>
+                    <div class="timer-box">
+                        <div class="timer-item">
+                            <span id="days" class="timer-number">00</span>
+                            <p>Days</p>
+                        </div>
+                        <div class="timer-item">
+                            <span id="hours" class="timer-number">00</span>
+                            <p>Hours</p>
+                        </div>
+                        <div class="timer-item">
+                            <span id="minutes" class="timer-number">00</span>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="timer-item">
+                            <span id="seconds" class="timer-number">00</span>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                    <p class="timer-text">Until Your Beautiful Birthdate 💖</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Navigation -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-heart"></i> About Us</a></li>
+                <li><a href="timeline.html"><i class="fas fa-clock"></i> Timeline</a></li>
+                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="music.html"><i class="fas fa-music"></i> Music</a></li>
+                <li><a href="#countdown"><i class="fas fa-timer"></i> Countdown</a></li>
+                <li><a href="surprise.html"><i class="fas fa-gift"></i> Surprise</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Audio Player -->
+    <audio id="bgMusic" loop>
+        <source src="sounds/birthday-music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="musicToggle" class="music-toggle">
+        <i class="fas fa-volume-up"></i>
+    </button>
+    
+    <script src="js/main.js"></script>
+    <script src="js/countdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Photo Gallery - Sanu ❤️</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts"></div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <section id="gallery" class="page active">
+            <div class="gallery-content">
+                <h1 class="section-title">Our Precious Moments, Sanu</h1>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox(0)">
+                        <img src="gallery_photos/photo1.jpg" alt="Our beautiful moment">
+                        <div class="heart-overlay">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(1)">
+                        <img src="gallery_photos/photo2.jpg" alt="Another special moment">
+                        <div class="heart-overlay">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(2)">
+                        <img src="gallery_photos/photo3.jpg" alt="A cherished memory">
+                        <div class="heart-overlay">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(3)">
+                        <img src="gallery_photos/photo4.jpg" alt="An amazing time together">
+                        <div class="heart-overlay">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(4)">
+                        <img src="gallery_photos/photo5.jpg" alt="A fun day">
+                        <div class="heart-overlay">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(5)">
+                        <img src="gallery_photos/photo6.jpg" alt="A romantic evening">
+                        <div class="heart-overlay">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lightbox -->
+                <div id="lightbox" class="lightbox">
+                    <span class="close" onclick="closeLightbox()">&times;</span>
+                    <img class="lightbox-content" id="lightbox-img">
+                    <div class="lightbox-nav">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Navigation -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-heart"></i> About Us</a></li>
+                <li><a href="timeline.html"><i class="fas fa-clock"></i> Timeline</a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="music.html"><i class="fas fa-music"></i> Music</a></li>
+                <li><a href="countdown.html"><i class="fas fa-timer"></i> Countdown</a></li>
+                <li><a href="surprise.html"><i class="fas fa-gift"></i> Surprise</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Audio Player -->
+    <audio id="bgMusic" loop>
+        <source src="sounds/birthday-music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="musicToggle" class="music-toggle">
+        <i class="fas fa-volume-up"></i>
+    </button>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

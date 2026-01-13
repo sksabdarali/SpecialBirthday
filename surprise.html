@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Special Surprise, Sanu ❤️</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts"></div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <section id="surprise" class="page active">
+            <div class="surprise-content">
+                <h1 class="section-title">Your Special Surprise, Sanu</h1>
+                
+                <div class="confetti-container">
+                    <canvas id="confetti-canvas"></canvas>
+                </div>
+                
+                <div class="surprise-message">
+                    <h2>Happy Birthday My Love! ❤️</h2>
+                    <p>You mean the world to me. Thank you for being the most amazing person in my life.</p>
+                    <p>Every day with you is a blessing, and I can't wait to celebrate many more birthdays with you.</p>
+                    <p>With all my love,</p>
+                    <p>Michael</p>
+                </div>
+                
+                <button id="giftBtn" class="gift-button">Open Your Gift ❤️</button>
+                
+                <div id="giftContent" class="gift-content" style="display: none;">
+                    <h3>My Dearest Sanu,</h3>
+                    <p>Just like this website, you're full of surprises and beautiful moments that brighten my world.</p>
+                    <p>I hope this little gift brought a smile to your face, because making you happy is my greatest joy.</p>
+                    <p>Happy Birthday to the most incredible person I've ever known. You mean everything to me.</p>
+                    <p>Here's to many more years of love, laughter, and beautiful memories together!</p>
+                    <p>Forever yours,</p>
+                    <p>Michael</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Navigation -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-heart"></i> About Us</a></li>
+                <li><a href="timeline.html"><i class="fas fa-clock"></i> Timeline</a></li>
+                <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+                <li><a href="music.html"><i class="fas fa-music"></i> Music</a></li>
+                <li><a href="countdown.html"><i class="fas fa-timer"></i> Countdown</a></li>
+                <li><a href="#surprise"><i class="fas fa-gift"></i> Surprise</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Audio Player -->
+    <audio id="bgMusic" loop>
+        <source src="sounds/birthday-music.mp3" type="audio/mpeg">
+    </audio>
+    <button id="musicToggle" class="music-toggle">
+        <i class="fas fa-volume-up"></i>
+    </button>
+    
+    <script src="js/main.js"></script>
+    <script src="js/confetti.js"></script>
+</body>
+</html>
