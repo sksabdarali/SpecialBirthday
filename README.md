@@ -1,4 +1,4 @@
-# Romantic Birthday Website for Sarah ❤️
+# Romantic Birthday Website for Favrote Person ❤️
 
 ## Overview
 This is a beautiful, romantic, multi-page birthday website created as a surprise gift for Sarah. The website features smooth animations, interactive elements, a real-time countdown timer, and a personalized journey through your love story.
